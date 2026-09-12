@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: AliceBlue;
+}
+
+header {
+    background-color: #005A8D;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+
+/* ---------- MAIN LAYOUT ---------- */
+
+.main-container {
+    display: flex;
+    min-height: 500px;
+}
+
+
+/* ---------- SIDEBAR ---------- */
+
+.sidebar {
+    width: 22%;
+    background-color: #D9F3F3;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+
+/* Sidebar heading */
+
+.sidebar h2 {
+    color: #005A8D;
+    text-align: center;
+}
+
+
+/* Sidebar links */
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #005A8D;
+    background-color: white;
+    padding: 12px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 5px;
+}
+
+
+/* Hover effect */
+
+.sidebar a:hover {
+    background-color: #BFE8E8;
+}
+
+
+/* ---------- CONTENT ---------- */
+
+.content {
+    width: 78%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+
+/* Content heading */
+
+.content h1 {
+    color: #005A8D;
+}
+
+
+/* ---------- FOOTER ---------- */
+
+footer {
+    background-color: #005A8D;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* =========================================
+   TASK 10: CSS EFFECTS & HIGHLIGHTING
+   ========================================= */
+
+
+/* ---------- OFFER BOX ---------- */
+
+.offer-box {
+    background-color: #FFF3CD;
+    color: #B45309;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    text-align: center;
+
+    padding: 20px;
+    margin: 25px 0;
+
+    border: 3px solid #F59E0B;
+    border-radius: 10px;
+
+    box-shadow: 0 0 15px #F59E0B;
+
+    text-shadow: 1px 1px 3px #888;
+
+    animation: glow 1.5s infinite alternate;
+}
+
+
+/* ---------- GLOWING ANIMATION ---------- */
+
+@keyframes glow {
+
+    from {
+        box-shadow: 0 0 5px #F59E0B;
+    }
+
+    to {
+        box-shadow: 0 0 25px #F59E0B;
+    }
+
+}

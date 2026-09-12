@@ -1,0 +1,96 @@
+body {
+    background-color: AliceBlue;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Heading */
+
+h1 {
+    background-color: lightblue;
+    padding: 20px;
+}
+
+
+/* ================================
+   Navigation Bar
+   ================================ */
+
+nav {
+    background-color: #087F8C;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+/* ================================
+   IMAGE GALLERY
+   ================================ */
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+/* Same size for all images */
+
+.gallery img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+
+    border: 4px solid #087F8C;
+
+    /* Smooth transition */
+    transition: transform 0.4s;
+}
+
+
+/* Hover Zoom Effect */
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Image captions */
+
+figcaption {
+    margin-top: 12px;
+    font-size: 16px;
+}
+What changed from your Experiment 1?
+
+Your Exp 1 had:
+
+<img src="clinical.jpg"
+     width="250"
+     height="180"
+     border="2">
+
+For Exp 2, we remove those styling attributes:
+
+<img src="clinical.jpg">
+
+because nav.css now controls:
+
+.gallery img {
+    width: 250px;
+    height: 180px;
+    border: 4px solid #087F8C;
+    transition: transform 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,58 @@
+body {
+    background-color: AliceBlue;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
+
+h1 {
+    color: #087F8C;
+}
+
+h2 {
+    color: #176B87;
+}
+
+/* Categories Card */
+.category-card {
+    width: 300px;
+    margin: 30px auto;
+    padding: 25px;
+
+    border: 2px solid #087F8C;
+    border-radius: 15px;
+
+    background-color: white;
+
+    box-shadow: 5px 5px 15px gray;
+
+    text-align: left;
+}
+
+.category-card h3 {
+    text-align: center;
+    color: #087F8C;
+    margin-bottom: 20px;
+}
+
+/* List Styling */
+.category-card ul {
+    padding-left: 20px;
+}
+
+.category-card li {
+    margin: 12px 0;
+    padding: 8px;
+
+    list-style-type: none;
+
+    border-radius: 8px;
+}
+
+/* Hover Effect */
+.category-card li:hover {
+    background-color: #DDF3F1;
+    color: #087F8C;
+    cursor: pointer;
+}

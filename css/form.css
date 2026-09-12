@@ -1,0 +1,132 @@
+/* =========================================
+   TASK 8: STYLE REGISTRATION FORM
+   ========================================= */
+
+
+/* ---------- PAGE ---------- */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: AliceBlue;
+}
+
+
+/* ---------- FORM ---------- */
+
+form {
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+
+/* ---------- FIELDSET ---------- */
+
+fieldset {
+    border: 2px solid #005A8D;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/* ---------- LEGEND ---------- */
+
+legend {
+    color: #005A8D;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 5px 12px;
+}
+
+
+/* ---------- LABELS ---------- */
+
+label {
+    font-weight: bold;
+    color: #333333;
+}
+
+
+/* ---------- INPUT BOXES ---------- */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    width: 90%;
+    padding: 12px;
+    margin: 8px 0 18px 0;
+
+    border: 2px solid #B7C9D3;
+    border-radius: 7px;
+
+    font-size: 15px;
+}
+
+
+/* ---------- INPUT FOCUS ---------- */
+
+input:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid #008B8B;
+    outline: none;
+
+    background-color: #F0FFFF;
+}
+
+
+/* ---------- SUBMIT BUTTON ---------- */
+
+input[type="submit"] {
+    background-color: #005A8D;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 12px 30px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+/* ---------- BUTTON HOVER ---------- */
+
+input[type="submit"]:hover {
+    background-color: #008B8B;
+
+    box-shadow: 0 0 12px #008B8B;
+}
+
+
+/* ---------- RESET BUTTON ---------- */
+
+input[type="reset"] {
+    background-color: #777777;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    padding: 12px 30px;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+
+/* ---------- RESET HOVER ---------- */
+
+input[type="reset"]:hover {
+    background-color: #444444;
+}

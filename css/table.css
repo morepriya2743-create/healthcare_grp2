@@ -1,0 +1,47 @@
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+/* Table cells */
+
+th,
+td {
+    border: 1px solid #555;
+    padding: 10px;
+}
+
+/* Page headings */
+
+h1,
+h2 {
+    text-align: center;
+}
+
+/* Table heading */
+
+thead {
+    background-color: #0B7A75;
+    color: white;
+}
+
+/* Zebra striping */
+
+tbody tr:nth-child(even) {
+    background-color: #DDF3F1;
+}
+
+/* Footer */
+
+tfoot {
+    background-color: #FFF4C2;
+}
+
+/* Caption */
+
+caption {
+    padding: 10px;
+    font-size: 18px;
+}

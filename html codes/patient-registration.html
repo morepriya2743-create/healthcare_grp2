@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LifeCare | Online Patient Registration</title>
+</head>
+
+<body bgcolor="AliceBlue">
+
+    <!-- ================= HEADER ================= -->
+
+    <table width="100%" bgcolor="#0B7A75" cellpadding="18">
+        <tr>
+            <td align="center">
+                <font color="white" size="6">
+                    <b>⚕ LIFΕCARE CLINICAL LABORATORY</b>
+                </font>
+                <br>
+                <font color="white" size="3">
+                    <i>Accurate Tests • Trusted Results • Better Care</i>
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br>
+
+    <h1 align="center">📝 Online Patient Registration</h1>
+
+    <p align="center">
+        <font color="#0B7A75" size="4">
+            <b>Welcome to LifeCare's Digital Registration Desk</b>
+        </font>
+    </p>
+
+    <p align="center">
+        Please enter your details below to schedule your laboratory test.
+    </p>
+
+    <hr width="80%">
+
+    <!-- ================= QUICK INFO ================= -->
+
+    <table width="80%" align="center" border="1" cellpadding="12">
+
+        <tr bgcolor="#BFE8E5">
+            <th>🕐 Easy Booking</th>
+            <th>🧪 Trusted Testing</th>
+            <th>📋 Digital Registration</th>
+        </tr>
+
+        <tr align="center">
+            <td>Register from anywhere</td>
+            <td>Quality laboratory services</td>
+            <td>Quick & convenient process</td>
+        </tr>
+
+    </table>
+
+    <br>
+
+    <!-- ================= FORM ================= -->
+
+    <form>
+
+        <!-- PATIENT INFORMATION -->
+
+        <fieldset>
+
+            <legend>
+                <font color="#0B7A75" size="4">
+                    <b>👤 Patient Information</b>
+                </font>
+            </legend>
+
+            <table width="100%" cellpadding="10">
+
+                <tr>
+                    <td width="30%">
+                        <label for="name">
+                            <b>Patient Name</b>
+                        </label>
+                    </td>
+
+                    <td>
+                        <input type="text"
+                               id="name"
+                               name="name"
+                               placeholder="Enter Full Name"
+                               size="40"
+                               required
+                               autofocus>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="age">
+                            <b>Age</b>
+                        </label>
+                    </td>
+
+                    <td>
+                        <input type="number"
+                               id="age"
+                               name="age"
+                               placeholder="Enter Age"
+                               min="1"
+                               max="120"
+                               required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <b>Gender</b>
+                    </td>
+
+                    <td>
+
+                        <input type="radio"
+                               id="male"
+                               name="gender"
+                               value="Male"
+                               required>
+                        <label for="male">👨 Male</label>
+
+                        &nbsp;&nbsp;
+
+                        <input type="radio"
+                               id="female"
+                               name="gender"
+                               value="Female">
+                        <label for="female">👩 Female</label>
+
+                        &nbsp;&nbsp;
+
+                        <input type="radio"
+                               id="other"
+                               name="gender"
+                               value="Other">
+                        <label for="other">⚪ Other</label>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="mobile">
+                            <b>Mobile Number</b>
+                        </label>
+                    </td>
+
+                    <td>
+                        <input type="tel"
+                               id="mobile"
+                               name="mobile"
+                               placeholder="9876543210"
+                               pattern="[0-9]{10}"
+                               size="30"
+                               required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="email">
+                            <b>Email Address</b>
+                        </label>
+                    </td>
+
+                    <td>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="example@gmail.com"
+                               size="40"
+                               required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="dob">
+                            <b>Date of Birth</b>
+                        </label>
+                    </td>
+
+                    <td>
+                        <input type="date"
+                               id="dob"
+                               name="dob"
+                               required>
+                    </td>
+                </tr>
+
+            </table>
+
+        </fieldset>
+
+        <br>
+
+
+        <!-- TEST DETAILS -->
+
+        <fieldset>
+
+            <legend>
+                <font color="#0B7A75" size="4">
+                    <b>🧪 Laboratory Test Details</b>
+                </font>
+            </legend>
+
+            <table width="100%" cellpadding="10">
+
+                <tr>
+                    <td width="30%">
+                        <label for="test">
+                            <b>Select Laboratory Test</b>
+                        </label>
+                    </td>
+
+                    <td>
+
+                        <select id="test"
+                                name="test"
+                                required>
+
+                            <option value="">
+                                -- Select Your Test --
+                            </option>
+
+                            <option>
+                                Complete Blood Count (CBC)
+                            </option>
+
+                            <option>
+                                Blood Sugar
+                            </option>
+
+                            <option>
+                                Urine Routine Test
+                            </option>
+
+                            <option>
+                                Liver Function Test
+                            </option>
+
+                            <option>
+                                Thyroid Profile
+                            </option>
+
+                            <option>
+                                Lipid Profile
+                            </option>
+
+                        </select>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="appointment">
+                            <b>Preferred Appointment Date</b>
+                        </label>
+                    </td>
+
+                    <td>
+                        <input type="date"
+                               id="appointment"
+                               name="appointment"
+                               required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <b>Sample Collection</b>
+                    </td>
+
+                    <td>
+
+                        <input type="radio"
+                               id="lab"
+                               name="sample"
+                               value="Visit Laboratory"
+                               required>
+
+                        <label for="lab">
+                            🏥 Visit Laboratory
+                        </label>
+
+                        &nbsp;&nbsp;
+
+                        <input type="radio"
+                               id="home"
+                               name="sample"
+                               value="Home Collection">
+
+                        <label for="home">
+                            🏠 Home Collection
+                        </label>
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="file">
+                            <b>Doctor's Prescription</b>
+                        </label>
+                    </td>
+
+                    <td>
+                        <input type="file"
+                               id="file"
+                               name="file"
+                               required>
+
+                        <br>
+
+                        <small>
+                            Upload prescription or referral document.
+                        </small>
+                    </td>
+                </tr>
+
+            </table>
+
+        </fieldset>
+
+        <br>
+
+
+        <!-- ADDITIONAL INFORMATION -->
+
+        <fieldset>
+
+            <legend>
+                <font color="#0B7A75" size="4">
+                    <b>💬 Additional Information</b>
+                </font>
+            </legend>
+
+            <p>
+                <label for="message">
+                    <b>Any message or special requirement:</b>
+                </label>
+            </p>
+
+            <textarea id="message"
+                      name="message"
+                      rows="5"
+                      cols="70"
+                      placeholder="Enter any additional information here..."></textarea>
+
+        </fieldset>
+
+        <br>
+
+
+        <!-- HEALTH REMINDER -->
+
+        <fieldset>
+
+            <legend>
+                <font color="#0B7A75" size="4">
+                    <b>❤️ LifeCare Health Reminder</b>
+                </font>
+            </legend>
+
+            <p align="center">
+
+                <font size="4">
+                    <b>“Your health deserves attention. Your information deserves care.”</b>
+                </font>
+
+            </p>
+
+            <p align="center">
+                Please make sure all the information entered above is correct
+                before submitting the registration form.
+            </p>
+
+        </fieldset>
+
+        <br>
+
+
+        <!-- CONSENT -->
+
+        <p align="center">
+
+            <input type="checkbox"
+                   id="consent"
+                   name="consent"
+                   required>
+
+            <label for="consent">
+                I confirm that the information provided by me is accurate.
+            </label>
+
+        </p>
+
+
+        <!-- BUTTONS -->
+
+        <table align="center" cellpadding="10">
+
+            <tr>
+
+                <td>
+                    <input type="submit"
+                           value="✅ Register Patient">
+                </td>
+
+                <td>
+                    <input type="reset"
+                           value="🔄 Clear Form">
+                </td>
+
+            </tr>
+
+        </table>
+
+    </form>
+
+    <br>
+
+    <hr>
+
+    <!-- ================= FOOTER ================= -->
+
+    <table width="100%" bgcolor="#0B7A75" cellpadding="15">
+
+        <tr>
+            <td align="center">
+
+                <font color="white">
+
+                    <b>⚕ LifeCare Clinical Laboratory</b>
+
+                    <br><br>
+
+                    🧪 Quality Diagnostics &nbsp; | &nbsp;
+                    📋 Patient Care &nbsp; | &nbsp;
+                    ❤️ Better Health
+
+                    <br><br>
+
+                    <small>
+                        © 2026 LifeCare Clinical Laboratory
+                    </small>
+
+                </font>
+
+            </td>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>

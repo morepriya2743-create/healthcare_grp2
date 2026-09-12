@@ -1,0 +1,36 @@
+body {
+background-color: AliceBlue;
+font-family: Arial, sans-serif;
+text-align: center;
+margin: 0;
+padding: 20px;
+}
+h1 {
+color: #087F8C;
+margin-bottom: 5px;
+}
+h2 {
+color: #176B87;
+}
+/* Urine Test Card */
+.book-card {
+width: 250px;
+margin: 20px;
+padding: 20px;
+border: 2px solid #087F8C;
+background-color: white;
+text-align: center;
+display: inline-block;
+box-shadow: 4px 4px 12px gray;
+vertical-align: top;
+}
+.book-card h2 {
+color: #087F8C;
+font-size: 20px;
+}
+.book-card p {
+line-height: 1.5;
+}
+hr {
+margin-top: 30px;
+}

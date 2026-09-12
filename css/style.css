@@ -1,0 +1,338 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4faf9;
+    color: #1f7a78;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+header {
+    background-color: #72ada8;
+    padding: 22px 6%;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    font-size: 34px;
+}
+
+.tagline {
+    color: #064e4b;
+    font-size: 17px;
+    font-style: italic;
+    margin-top: 5px;
+}
+
+.logo {
+    width: 280px;
+    height: 90px;
+    object-fit: contain;
+    background-color: white;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   NAVIGATION
+========================================= */
+
+nav {
+    background-color: lightblue;
+    margin-top: 20px;
+    padding: 14px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+nav a {
+    color: #064e4b;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================================
+   PAGE INTRODUCTION
+========================================= */
+
+.page-heading {
+    background-color: white;
+    text-align: center;
+    padding: 35px 20px;
+    border-bottom: 4px solid #72ada8;
+}
+
+.page-heading h2 {
+    color: #064e4b;
+    font-size: 32px;
+    margin: 0;
+}
+
+.page-heading p {
+    color: #607775;
+}
+
+
+/* =========================================
+   MAIN CONTENT
+========================================= */
+
+.container {
+    width: 88%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+
+/* =========================================
+   TEST HEADER CARD
+========================================= */
+
+.test-header {
+    background-color: #064e4b;
+    color: white;
+    padding: 28px;
+    border-radius: 15px 15px 0 0;
+}
+
+.test-header h1 {
+    margin: 0;
+    color: white;
+    font-size: 30px;
+}
+
+.test-header p {
+    margin-bottom: 0;
+    color: #dff5f2;
+}
+
+
+/* =========================================
+   TEST CONTENT
+========================================= */
+
+.test-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================
+   SUMMARY CARDS
+========================================= */
+
+.summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 30px;
+}
+
+.summary-card {
+    background-color: #e8f6f5;
+    padding: 18px;
+    text-align: center;
+    border-radius: 10px;
+    border-top: 5px solid #72ada8;
+}
+
+.summary-card h3 {
+    margin: 5px;
+    color: #064e4b;
+}
+
+.summary-card p {
+    margin: 5px;
+}
+
+
+/* =========================================
+   DETAILS GRID
+========================================= */
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.detail-card {
+    padding: 22px;
+    background-color: #f5faf9;
+    border-left: 5px solid #72ada8;
+    border-radius: 10px;
+}
+
+.detail-card h3 {
+    margin-top: 0;
+    color: #064e4b;
+}
+
+.detail-card p {
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   REFERENCE RANGE
+========================================= */
+
+.reference {
+    background-color: #eaf5f8;
+    border-left-color: #4d9eaa;
+}
+
+
+/* =========================================
+   REPORT DELIVERY
+========================================= */
+
+.report {
+    margin-top: 20px;
+    background-color: #eef8f7;
+}
+
+
+/* =========================================
+   IMPORTANT INSTRUCTIONS
+========================================= */
+
+.important {
+    margin-top: 30px;
+    padding: 22px;
+    background-color: #fff5d6;
+    border: 2px solid #e5c95b;
+    border-radius: 10px;
+}
+
+.important h2 {
+    color: #715c00;
+    margin-top: 0;
+}
+
+
+/* =========================================
+   FASTING REQUIREMENTS
+========================================= */
+
+.fasting {
+    margin-top: 20px;
+    padding: 22px;
+    background-color: #e6f3f7;
+    border-left: 6px solid #72ada8;
+    border-radius: 10px;
+}
+
+.fasting h2 {
+    color: #064e4b;
+    margin-top: 0;
+}
+
+
+/* =========================================
+   HTML FORMATTING
+========================================= */
+
+strong {
+    color: #064e4b;
+}
+
+em {
+    color: #416b68;
+}
+
+mark {
+    background-color: #ffe36e;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+small {
+    color: #6c7d7b;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    background-color: #064e4b;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+footer h3 {
+    color: white;
+    margin: 0;
+}
+
+footer p {
+    color: white;
+}
+
+footer small {
+    color: #cde9e6;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-top: 20px;
+        width: 250px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
+    }
+
+    .details {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+}

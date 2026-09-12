@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Laboratory Tests | LifeCare Clinical Laboratory</title>
+
+    <style>
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4fbfa;
+            color: #243b3a;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #72ada8;
+            padding: 20px 40px;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .title h1 {
+            margin: 0;
+            color: white;
+            font-size: 34px;
+        }
+
+        .title p {
+            color: #064e4b;
+            font-size: 18px;
+            font-style: italic;
+        }
+
+        .logo {
+            width: 300px;
+            height: 90px;
+            object-fit: contain;
+            background-color: white;
+            border-radius: 8px;
+        }
+
+        /* NAVIGATION */
+        nav {
+            margin-top: 15px;
+            background-color: lightblue;
+            padding: 14px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        nav a {
+            color: #064e4b;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+            background-color: #064e4b;
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        /* PAGE TITLE */
+        .page-title {
+            text-align: center;
+            padding: 30px 15px 15px;
+        }
+
+        .page-title h2 {
+            color: #064e4b;
+            font-size: 30px;
+        }
+
+        .page-title p {
+            color: #56716f;
+        }
+
+        /* MAIN */
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        /* CARDS */
+        .card {
+            background-color: white;
+            margin: 25px 0;
+            padding: 25px;
+            border-radius: 12px;
+            border-left: 6px solid #72ada8;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .card h2 {
+            color: #064e4b;
+            margin-top: 0;
+        }
+
+        /* ORDERED LIST */
+        .process-list {
+            padding-left: 30px;
+        }
+
+        .process-list li {
+            padding: 12px;
+            margin: 10px 0;
+            background-color: #e8f6f5;
+            border-radius: 7px;
+        }
+
+        .process-list li::marker {
+            color: #064e4b;
+            font-weight: bold;
+        }
+
+        /* UNORDERED LIST */
+        .test-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 12px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .test-list li {
+            background-color: #e5f3f7;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #b9dfe4;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .test-list li:hover {
+            transform: translateY(-3px);
+            background-color: #d4edef;
+        }
+
+        .test-list li::before {
+            content: "🔬 ";
+        }
+
+        /* DESCRIPTION LIST */
+        dl {
+            margin: 0;
+        }
+
+        dt {
+            color: #064e4b;
+            font-size: 19px;
+            font-weight: bold;
+            margin-top: 18px;
+        }
+
+        dd {
+            margin: 8px 0 15px 20px;
+            padding: 12px;
+            background-color: #f0f8f7;
+            border-radius: 6px;
+            line-height: 1.6;
+        }
+
+        /* FORMATTING TAGS */
+        .important {
+            background-color: #fff8d6;
+            border: 1px solid #e4cf65;
+            padding: 18px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 25px 0;
+        }
+
+        mark {
+            background-color: #ffe66d;
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #064e4b;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        footer h3 {
+            margin-top: 0;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 700px) {
+
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo {
+                margin-top: 15px;
+                width: 250px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .test-list {
+                grid-template-columns: 1fr;
+            }
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="header-container">
+
+            <div class="title">
+
+                <h1>
+                    🧪 LifeCare Clinical Laboratory 🧬
+                </h1>
+
+                <p>
+                    Accurate Diagnostics for Better Healthcare
+                </p>
+
+            </div>
+
+
+            <img
+                src="https://dfwhc.org/wp-content/uploads/2014/10/LOGO-LifeCare.jpg"
+                alt="LifeCare Laboratory Logo"
+                class="logo">
+
+        </div>
+
+
+        <!-- NAVIGATION -->
+
+        <nav>
+
+            <a href="index.html">🏠 Home</a>
+
+            <a href="laboratory-tests.html">🔬 Laboratory Tests</a>
+
+            <a href="#">💊 Health Packages</a>
+
+            <a href="#">📝 Online Registration</a>
+
+            <a href="#">📄 Reports</a>
+
+            <a href="#">📞 Contact Us</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- PAGE INTRODUCTION -->
+
+    <section class="page-title">
+
+        <h2>
+            🔬 Laboratory Tests & Services
+        </h2>
+
+        <p>
+            Explore our testing process and the diagnostic services
+            offered by LifeCare Clinical Laboratory.
+        </p>
+
+    </section>
+
+
+    <main>
+
+
+        <!-- ORDERED LIST -->
+
+        <section class="card">
+
+            <h2>
+                🧪 Patient Testing Process
+            </h2>
+
+            <ol class="process-list">
+
+                <li>
+                    <b>Patient Registration</b>
+                    – Patient details are recorded.
+                </li>
+
+                <li>
+                    <b>Sample Collection</b>
+                    – Required samples are collected safely.
+                </li>
+
+                <li>
+                    <b>Laboratory Testing</b>
+                    – Samples are examined using laboratory equipment.
+                </li>
+
+                <li>
+                    <b>Report Generation</b>
+                    – Test results are analyzed and reports are prepared.
+                </li>
+
+                <li>
+                    <b>Doctor Consultation</b>
+                    – The doctor reviews the results and provides guidance.
+                </li>
+
+            </ol>
+
+        </section>
+
+
+        <!-- UNORDERED LIST -->
+
+        <section class="card">
+
+            <h2>
+                🔬 Types of Laboratory Tests
+            </h2>
+
+            <ul class="test-list">
+
+                <li>Blood Tests</li>
+
+                <li>Urine Tests</li>
+
+                <li>Thyroid Profile</li>
+
+                <li>Liver Function Test</li>
+
+                <li>Kidney Function Test</li>
+
+                <li>Lipid Profile</li>
+
+                <li>Diabetes Tests</li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- DESCRIPTION LIST -->
+
+        <section class="card">
+
+            <h2>
+                📋 Common Test Information
+            </h2>
+
+            <dl>
+
+                <dt>CBC</dt>
+
+                <dd>
+                    <i>Complete Blood Count</i> evaluates important
+                    components of the blood, including red blood cells,
+                    white blood cells and platelets.
+                </dd>
+
+
+                <dt>HbA1c</dt>
+
+                <dd>
+                    Measures average blood glucose levels over the
+                    previous few months and is commonly used for
+                    diabetes monitoring.
+                </dd>
+
+
+                <dt>LFT</dt>
+
+                <dd>
+                    <i>Liver Function Test</i> helps assess the
+                    health and function of the liver.
+                </dd>
+
+
+                <dt>KFT</dt>
+
+                <dd>
+                    <i>Kidney Function Test</i> helps evaluate
+                    kidney function.
+                </dd>
+
+
+                <dt>ECG</dt>
+
+                <dd>
+                    <i>Electrocardiogram</i> records the electrical
+                    activity of the heart.
+                </dd>
+
+            </dl>
+
+        </section>
+
+
+        <!-- FORMATTING TAGS -->
+
+        <section class="important">
+
+            <p>
+
+                <b>Important:</b>
+                Please follow the instructions provided by the
+                laboratory before your test.
+
+            </p>
+
+            <p>
+
+                <i>
+                    Accurate testing helps support better healthcare decisions.
+                </i>
+
+            </p>
+
+            <p>
+
+                <mark>
+                    Please bring your registration details when visiting
+                    the laboratory.
+                </mark>
+
+            </p>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>
+            🧪 LifeCare Clinical Laboratory 🧬
+        </h3>
+
+        <p>
+            <i>
+                Accurate Diagnostics • Trusted Care • Better Healthcare
+            </i>
+        </p>
+
+        <p>
+            © 2026 LifeCare Clinical Laboratory.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
